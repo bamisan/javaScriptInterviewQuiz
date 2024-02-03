@@ -137,3 +137,31 @@ const closureExample = outerFunction();
 
 // Calling the closure, which still has access to outerVariable
 closureExample(); // Output: I am from the outer function
+
+
+💥💥💥null and undefined💥💥💥
+
+'undefined' means a variable has been declared but not defined or assigned a value.
+       let x;
+       console.log(x); // Output: undefined
+
+'null' is an explicitly assigned value representing "nothing" or "empty".
+
+       let y = null;
+       console.log(y); // Output: null
+
+
+
+💥💥💥“ == “ and “ === “💥💥💥
+
+Difference between “ == “ and “ === “ operators
+
+"==" (Abstract Equality Operator)
+"===" (Strict Equality Operator)
+
+       var x = 2;
+       var y = "2";
+       (x == y)  // Returns true since the value of both x and y is the same
+       (x === y) // Returns false since the typeof x is "number" and typeof y is "string"
+
+Both are comparison operators. The difference between both the operators is that “==” is used to compare values whereas, “ === “ is used to compare both values and types.
